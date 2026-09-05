@@ -11,6 +11,8 @@ This can also be useful outside live-action matchmoving. Blender's Fisheye Lens 
 
 The source of truth is the Movie Clip's lens settings in the Clip Editor. Those settings can come from Blender's camera solve workflow, another distortion calibration add-on, or externally entered values. Sync LD itself does not calibrate lenses; it uses the existing Movie Clip values and does not edit them.
 
+> ⚠️Not all lens distortions can be perfectly reproduced. Please check the “Fit Quality” and other factors to determine what is within an acceptable range.
+
 ## Supported Distortion Models
 
 - Polynomial
