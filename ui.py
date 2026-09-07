@@ -347,7 +347,8 @@ class DATA_PT_sync_lens_distortion(Panel):
 
     @classmethod
     def poll(cls, context):
-        return camera_from_context(context) is not None
+        obj = context.object
+        return obj is not None and obj.type == "CAMERA"
 
     def draw(self, context):
         camera = camera_from_context(context)
